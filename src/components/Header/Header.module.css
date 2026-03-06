@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.headerLeft {
+  justify-content: flex-start;
+  margin-left: 2%;
+  padding: 25px;
+  font-size: 18px;
+}
+
+.headerTitleBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.headerTitle{
+  margin: 0;
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+  color: #221102;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: Anticva;
+}
+
+.headerTitleLeft{
+  font-size: 24px;
+}
+
+.headerEn {
+  padding: 40px;
+}
+
+.headerTitleEn {
+  font-size: 28px;
+}

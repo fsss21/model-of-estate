@@ -1,0 +1,216 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  padding: 1rem;
+}
+
+.modalBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1270px;
+  width: 100%;
+  height: 650px;
+  background: #f3e2c1;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 1220px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background-color: #F3E2C1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #4f493b;
+  border-radius: 2px;
+  transition: background-image 0.4s ease-in-out;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  padding: 0.5rem;
+  color: #5c5348;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.closeBtn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: #3d3630;
+}
+
+.closeBtn svg {
+  font-size: 1.5rem;
+}
+
+.autoShowTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #221102;
+  font-family: Anticva;
+}
+
+.videoWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 280px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.videoPlaceholder {
+  width: 100%;
+  height: 100%;
+}
+
+.startLabel{
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #221102;
+  font-family: Anticva;
+}
+
+.playOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  transition: opacity 0.25s ease;
+}
+
+.playBtnOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  color: #796F5B;
+  background: #CCB485;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+
+.playBtnOverlay:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.08);
+}
+
+.playBtnOverlay svg {
+  font-size: 2.75rem;
+}
+
+.timelineSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.currentBlockWrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.currentBlockLabel {
+  margin: 0;
+  background: rgb(204, 180, 133, 80%);
+  padding: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #695D43;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+  font-family: Raleway-v4020;
+}
+
+.sliderWrap {
+  width: 100%;
+  min-width: 0;
+}
+
+.sliderWithMarks :global(.MuiSlider-mark),
+.sliderWithMarks :global(.MuiSlider-markActive) {
+  background-color: #695D43;
+  height: 4px;
+  top: 50%;
+  
+}
+
+.controlsRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.volumeGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.volumeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: #5a503b;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.volumeBtn:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.volumeBtn svg {
+  font-size: 1.5rem;
+}
+
+.volumeSlider {
+  width: 100px;
+  color: #695d43;
+}
+
+.timer {
+  font-size: 20px;
+  color: #695D43;
+  font-variant-numeric: tabular-nums;
+  font-family: Raleway-v4020;
+}

@@ -1,0 +1,181 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+
+.modalBack{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 1270px;
+  background: #F3E2C1;
+  
+}
+
+.modal {
+  background-color: #f5eccb;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 16px;
+  height: 500px;
+  width: 1220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 4%;
+  margin: 0 0 1.5rem;
+  font-size: 44px;
+  font-weight: normal;
+  color: #221102;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Anticva
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.row svg{
+  height: 50px;
+  width: 50px;
+}
+
+.rowBtns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.sliders{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.langSwitch {
+  display: flex;
+  gap: 20px;
+}
+
+.langBtn{
+  width: 200px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #221102;
+  background: none;
+  color: #221102;
+  transition: background 0.2s, border-color 0.2s;
+  text-transform: uppercase;
+  font-family: Anticva;
+}
+
+
+.langBtnActive {
+  width: 200px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #CEAD75;
+  background: #CEAD75;
+  color: #221102;
+  transition: background 0.2s, border-color 0.2s;
+  text-transform: uppercase;
+  font-family: Anticva;
+}
+
+
+.langBtn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Контейнер слайдера */
+.slider {
+  width: 100% !important;
+  color: #cbb485 !important;
+}
+
+/* Фон всей линии (часть "после ползунка" — неактивная) */
+.sliderRail {
+  background-color: #cbb485 !important;
+  border-radius: 4px !important;
+  opacity: 1 !important;
+}
+
+/* Заполненная часть "до ползунка" (активная) */
+.sliderTrack {
+  background-color: #695d43 !important;
+  border-radius: 4px !important;
+  height: 5px !important;
+}
+
+/* Сам ползунок (thumb) */
+.sliderThumb {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sliderThumb:hover,
+.sliderThumb.Mui-focusVisible {
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0);
+}
+
+
+.closeBtn {
+  position: absolute;
+  right: 5px;
+  top: 1%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9A4236;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.closeBtn svg {
+  height: 35px;
+  width: 35px;
+}
+
+.closeBtn:hover {
+  transform: scale(1.10);
+}

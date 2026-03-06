@@ -1,5 +1,5 @@
 # React + Vite
-
+**1.05a зал с макетом усадьбы (система управления)**
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

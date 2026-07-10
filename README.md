@@ -1,16 +1,35 @@
-# React + Vite
-**1.05a зал с макетом усадьбы (система управления)**
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Зал с макетом усадьбы
 
-Currently, two official plugins are available:
+## Краткое описание ПО
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Интерактивный киоск зала с макетом усадьбы музея «Уткина дача» (система управления показом). Позволяет запустить автоматический показ по эпохам, выбрать эпоху вручную и открыть видео, а также настроить яркость, звук и язык интерфейса.
 
-## React Compiler
+## Сценарий работы ПО
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Стартовый экран
 
-## Expanding the ESLint configuration
+Заголовок «ЗАЛ С МАКЕТОМ УСАДЬБЫ». Кнопки:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **АВТОМАТИЧЕСКИЙ ПОКАЗ** — модальное окно автопоказа
+- **ВЫБОР ЭПОХИ** — экран выбора эпохи
+- иконка **Настройки** — модал настроек
+
+### Автоматический показ
+
+Модальное окно с кнопкой **начать показ**, плеером (воспроизведение/пауза) и шкалой времени по блокам (строительство, расцвет, трансформации, реставрация). Есть регулировка громкости и таймер. Закрытие окна возвращает на главное меню.
+
+### Выбор эпохи
+
+Кнопки эпох:
+
+- строительство
+- расцвет
+- трансформация 1
+- трансформация 2
+- реставрация
+
+Нажатие открывает модал видеоплеера выбранной эпохи (**начать показ**, управление воспроизведением). **назад** → главное меню.
+
+### Настройки
+
+Слайдеры **Яркость** и **Звук**, переключатель языка **Русский** / **English**. Закрытие возвращает на главное меню.

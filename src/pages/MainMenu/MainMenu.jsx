@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useTranslations } from '../../contexts/LanguageContext';
+import { fetchData } from '../../utils/cmsData.js'
 
 import mainMenuImg from '../../assets/main_menu_img.png';
 import mainMenuImg4k from '../../assets/main_menu_img-4k.png';
@@ -29,7 +30,7 @@ export default function MainMenu() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/data/menu.json')
+    fetchData('/data/menu.json')
       .then((res) => res.json())
       .then(setData)
       .catch(console.error);
